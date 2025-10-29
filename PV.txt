@@ -1,0 +1,96 @@
+CHECKLIST PHỎNG VẤN KỸ THUẬT - C, C++, EMBEDDED, THUẬT TOÁN, TRẢI NGHIỆM PROJECT
+-----------------------------------------------------
+ 
+1. C (Main focus cho nhúng, bộ nhớ, quản lý tài nguyên)
+ 
+- Dễ:
+  1. Phân biệt biến cục bộ, biến toàn cục, biến static.
+  2. Giải thích con trỏ và cách sử dụng con trỏ cơ bản.
+  3. Sự khác nhau giữa khai báo biến thường và khai báo bằng volatile.
+ 
+- Vừa:
+  4. Cách quản lý bộ nhớ động: malloc, free, các lỗi thường gặp và cách phòng tránh.
+  5. Giải thích stack, heap, và cách sự phân bổ bộ nhớ ảnh hưởng tới chương trình nhúng.
+  6. Viết chương trình quản lý buffer vòng (ring buffer) bằng C.
+  7. Làm thế nào để phát hiện và xử lý memory leak trong C?
+  8. Cách sử dụng struct để mô tả và truy xuất dữ liệu cảm biến.
+  9. Giải thích ý nghĩa của const, volatile, static trong code nhúng.
+ 
+- Vận dụng:
+  10. Thiết kế hệ thống quản lý bộ nhớ động trong môi trường tài nguyên hạn chế.
+  11. Viết chương trình đọc/ghi dữ liệu vào vùng nhớ EEPROM.
+  12. Cách bảo vệ truy cập tài nguyên chia sẻ trong hệ thống đa luồng bằng C (ví dụ: mutex, critical section).
+  13. Tối ưu hóa code C để giảm tiêu hao RAM, Flash cho vi điều khiển.
+  14. Xử lý ngoại lệ/ lỗi khi truy xuất con trỏ NULL, vi phạm vùng nhớ.
+  15. Thiết kế một hệ thống quản lý task đơn giản sử dụng function pointer.
+ 
+-----------------------------------------------------
+2. Embedded Systems (30 câu, đa dạng chủ đề)
+ 
+- Dễ:
+  1. Embedded system là gì?
+  2. Phân biệt vi điều khiển (MCU) và vi xử lý (CPU/MPU).
+  3. Các thành phần chính của hệ thống nhúng.
+  4. Mục đích sử dụng timer trong embedded.
+  5. Ý nghĩa của watchdog timer, khi nào cần sử dụng?
+  6. Các loại bộ nhớ sử dụng trong hệ nhúng: Flash, RAM, EEPROM.
+ 
+- Vừa:
+  7. Tổng quan về quy trình thiết kế hệ thống nhúng từ ý tưởng tới sản phẩm.
+  8. Các chuẩn giao tiếp phổ biến: UART, SPI, I2C – ưu/nhược điểm.
+  9. Phân biệt polling vs interrupt, khi nào dùng từng loại?
+  10. Cách thiết kế hệ thống chống nhiễu (debounce) cho nút nhấn.
+  11. Quản lý nguồn điện (power management) trong thiết kế nhúng.
+  12. Cách xử lý lỗi khi giao tiếp với thiết bị ngoại vi.
+  13. Nguyên lý hoạt động của ADC và ứng dụng trong đo lường.
+  14. Phân tích các loại cảm biến phổ biến: nhiệt độ, ánh sáng, gia tốc.
+  15. Lập trình PWM để điều khiển động cơ hoặc đèn LED.
+  16. Giới thiệu về RTOS, ưu điểm khi sử dụng RTOS trong nhúng.
+Cương
+17. Cách cập nhật firmware từ xa (OTA) trong thiết kế nhúng.
+  18. Vấn đề bảo mật trong hệ thống nhúng, ví dụ mã hóa dữ liệu giao tiếp.
+ 
+- Vận dụng:
+  19. Thiết kế và hiện thực giao tiếp UART giữa hai vi điều khiển.
+  20. Xây dựng hệ thống đo và giám sát nhiệt độ gửi dữ liệu về server.
+  21. Lập trình hệ thống phát hiện sự cố và tự động reset bằng watchdog.
+  22. Thiết kế hệ thống tiết kiệm năng lượng: sleep, wakeup, standby.
+  23. Xây dựng hệ thống lưu trữ dữ liệu cảm biến vào thẻ nhớ SD.
+  24. Tối ưu hóa chương trình để chạy ổn định trong môi trường nhiễu cao.
+  25. Lập trình điều khiển động cơ bước bằng tín hiệu số.
+  26. Quản lý truy cập tài nguyên chia sẻ giữa các task trong RTOS.
+  27. Thiết kế giao diện người dùng cơ bản trên LCD, OLED.
+  28. Tích hợp module truyền thông không dây (Bluetooth, WiFi) vào hệ thống nhúng.
+  29. Phân tích và xử lý vấn đề khi hệ thống bị treo hoặc lỗi không xác định.
+  30. Thiết kế hệ thống báo động (buzzer, LED, SMS) khi phát hiện sự cố.
+ 
+-----------------------------------------------------
+3. Thuật toán cơ bản (Chỉ câu hỏi Dễ và Vừa)
+ 
+- Dễ:
+  1. Thuật toán tìm giá trị lớn nhất/nhỏ nhất trong mảng.
+  2. Tính tổng, trung bình các phần tử trong mảng.
+  3. Thuật toán kiểm tra số nguyên tố.
+  4. Thuật toán đảo ngược chuỗi.
+ 
+- Vừa:
+  5. Thuật toán tìm kiếm nhị phân, ứng dụng trong thực tế.
+  6. Giải thích ý tưởng và ứng dụng sắp xếp lựa chọn (Selection Sort).
+  7. Đếm số lần xuất hiện của một phần tử trong mảng.
+  8. Viết hàm kiểm tra chuỗi có phải palindrome không.
+  9. Phân tích thuật toán tìm dãy con liên tiếp lớn nhất (Kadane’s Algorithm).
+  10. Đề xuất cách quản lý hàng đợi (queue) hoặc stack dùng mảng/link list.
+ 
+-----------------------------------------------------
+4. Kiến thức trải nghiệm dự án/project/bài tập lớn đã làm (Đánh giá ứng viên: đã làm gì, dùng cái gì, giải quyết vấn đề thế nào...)
+ 
+- Dễ:
+  1. Bạn đã từng tham gia loại dự án nào? Vai trò của bạn trong dự án đó?
+  2. Công cụ quản lý mã nguồn/project bạn sử dụng là gì?
+  3. Bạn thường sử dụng các tài liệu thiết kế nào khi bắt đầu dự án?
+ 
+- Vừa:
+  4. Bạn từng thiết kế/hiện thực module nào? Mô tả chức năng chính.
+  5. Bạn đã từng xử lý bug hoặc vấn đề khó trong project như thế nào?
+  6. Kinh nghiệm làm việc nhóm: bạn đã phối hợp, chia nhiệm vụ ra sao?
+
