@@ -14,22 +14,24 @@ vector<vector<int>> groupAnagrams(vector<int>& strs) {
         for (int j = i; j < strs.size(); j++)
         {
             a.push_back(strs[j]);
+            dem[strs[i]].insert(a);
         }
+        a = {};
     }
-    for(auto x : dem)
+
+    for (auto x : dem)
     {
-        cout << x.first << endl;
-        vector<vector<int>> s = vector<vector<int>>(x.second.begin(), x.second.end());
-        for(auto y : s)
-        {
-            for (auto z : y)
-            {
-                cout << z << " ";
-            }
-            cout << endl;
-        }
+        cout << x.first << ": ";
         cout << endl;
-        
+        vector<vector<int>> m = vector<vector<int>>(x.second.begin(), x.second.end());
+        for (auto z : m)
+        {
+            for (auto l : z)
+            {
+                cout << l << " ";
+            }
+         cout << endl;
+        }
     }
 }
 int main()

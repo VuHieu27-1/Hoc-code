@@ -46,8 +46,7 @@ CHECKLIST PHỎNG VẤN KỸ THUẬT - C, C++, EMBEDDED, THUẬT TOÁN, TRẢI N
   14. Phân tích các loại cảm biến phổ biến: nhiệt độ, ánh sáng, gia tốc.
   15. Lập trình PWM để điều khiển động cơ hoặc đèn LED.
   16. Giới thiệu về RTOS, ưu điểm khi sử dụng RTOS trong nhúng.
-Cương
-17. Cách cập nhật firmware từ xa (OTA) trong thiết kế nhúng.
+  17. Cách cập nhật firmware từ xa (OTA) trong thiết kế nhúng.
   18. Vấn đề bảo mật trong hệ thống nhúng, ví dụ mã hóa dữ liệu giao tiếp.
  
 - Vận dụng:
